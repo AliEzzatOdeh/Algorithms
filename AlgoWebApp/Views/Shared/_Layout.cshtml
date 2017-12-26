@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+
+<header>
+
+    <title>
+        Home
+    </title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel='stylesheet' href='~/css/site.css' />
+    @RenderSection("Styles",false)
+</header>
+
+<body>
+
+    <div class="page">
+
+        <div class="header">
+            <img class="menu-image" src="~/images/menu.svg">
+            <h1 class="header-text">Alogrithms</h1>
+            <img class="auther-image" src="~/images/AliOdeh.png">
+        </div>
+
+        <div class="container">
+
+             <div class="hidden side-menu">
+                <ul>
+                    <li class="side-menu-element">
+                        <label id="sortingCategory" class="category-label">Sorting</label>
+
+                        <ul id="sortingElements" class="hidden-without-reserved-place">
+                            <li class="side-menu-sub-element ">
+                                Insertion
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu-element">
+                        <label class="category-label">Searching</label>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="main-content">
+                
+                 @RenderBody()
+            </div>
+            
+            <div class="hidden auther-menu">
+
+                <div class="auther-details">
+                    By Ali Ezzat Odeh a young computer engineer with passion to programming.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="~/js/site.js"></script>
+    @RenderSection("Scripts",false)
+</body>
+
+
+    
+</html>

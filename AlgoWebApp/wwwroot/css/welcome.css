@@ -1,0 +1,17 @@
+.main-menu-canvas-container {
+    width: 100%;
+     height: 100%;
+     margin: auto;
+     margin-top: 30px;
+ }
+ 
+ .main-menu-canvas {
+     display: flex;
+     justify-content: space-between;
+     border-style: solid;
+     background-color: lightgray; 
+     width: 90%;
+     height: 90%;
+     margin: auto;
+     
+ }

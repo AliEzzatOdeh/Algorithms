@@ -1,0 +1,184 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    cursor: pointer;
+}
+
+.page {
+    background: url(../images/milky_way.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hidden-without-reserved-place{
+    display: none;
+}
+
+/*Header */
+
+.header {
+    padding: 100 px;
+    background-color: #5995DA;
+    text-align: center;
+    max-height: 90px;
+    min-height: 90px;
+    border: 1px solid;
+    font-size: 17px;
+    user-select: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-image {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.header-text {
+    margin: 25px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.auther-image {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/*Header*/
+
+
+/*Side Menu*/
+
+.container {
+    display: flex;
+    height: 100%;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.side-menu {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    justify-content: flex-start;
+    background-color: #2d353c;
+    height: 100%;
+    border-right: solid 1px;
+    color: #f8f8f8;
+    border-right-color: black;
+    font-size: 25px;  
+    user-select: none;
+}
+
+.side-menu-element {
+    border-bottom: solid 1px;
+    border-bottom-color: black;
+}
+
+.category-label{
+    cursor: pointer;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.category-label:hover{
+    background-color: darkcyan;   
+}
+
+.side-menu-sub-element {
+  
+    font-size: 20px;
+    padding: 10px;
+    background-color:lightgray;
+    padding-left: 20px;
+    color: black;
+}
+
+
+/*Side Menu*/
+
+
+/*Main Content*/
+
+.main-content {
+    display: flex;
+    flex: 5;
+    justify-content: space-between;
+    flex-flow: column;
+    background-color:beige;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-menu-canvas-container {
+   width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+/*Main Content*/
+
+
+/*Auther Menu*/
+
+.auther-menu {
+    flex: 1;
+    background-color: #2d353c;
+    height: 100%;
+    user-select: none;
+    border-left: solid 1px;
+    border-left-color: black;
+    color: #f8f8f8;
+    font-size: 25px;
+}
+
+.auther {
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+}
+
+.auther-name {
+    margin-top: 10px;
+}
+
+.auther-details{
+    display: block;
+    margin: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/*Auther Menu*/
